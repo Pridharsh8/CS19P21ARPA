@@ -1,0 +1,172 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="DataWizard" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="848.8,1033.6" sap2010:WorkflowViewState.IdRef="DataWizard_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.ExtractData</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>UiPath.Excel.Activities</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Python.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>UiPath.Python</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="DataWizard" sap:VirtualizedContainerService.HintSize="609.6,968.8" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="sd:DataTable" Default="[New System.Data.DataTable]" Name="ExtractDataTable" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="547.2,860" sap2010:WorkflowViewState.IdRef="CommentOut_1">
+      <ui:CommentOut.Body>
+        <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="512,749.6" sap2010:WorkflowViewState.IdRef="Sequence_3">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application/Browser" sap:VirtualizedContainerService.HintSize="449.6,660.8" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="e00fcc7c-4d29-464f-a805-6541c59b2701" Version="V2">
+            <uix:NApplicationCard.Body>
+              <ActivityAction x:TypeArguments="x:Object">
+                <ActivityAction.Argument>
+                  <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                </ActivityAction.Argument>
+                <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="416,420.8" sap2010:WorkflowViewState.IdRef="Sequence_2">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <uix:NExtractData AppendResults="False" ContinueOnError="True" DataTable="[ExtractDataTable]" DisplayName="Extract Table Data" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured' AddCvHeader='true' IsScrollEnabled='false'&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column0' Name='New column 0'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xD;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;true&lt;/CanExtractSimilar&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column1' Name='New column 1'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xD;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;true&lt;/CanExtractSimilar&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract&gt;&lt;row exact='1'&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='a' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;/row&gt;&lt;column exact='1' name='Column0' attr='fulltext'&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='a' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='h6' idx='1' /&gt;&lt;webctrl tag='span' idx='1' /&gt;&lt;/column&gt;&lt;column exact='1' name='Column1' attr='fulltext'&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='a' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='p' idx='1' /&gt;&lt;/column&gt;&lt;/extract&gt;" sap:VirtualizedContainerService.HintSize="353.6,189.6" sap2010:WorkflowViewState.IdRef="NExtractData_1" LimitExtractionTo="None" MaximumResults="0" ScopeIdentifier="e00fcc7c-4d29-464f-a805-6541c59b2701" Version="V3">
+                    <uix:NExtractData.Target>
+                      <uix:TargetAnchorable BrowserURL="https://www.uipath.com/resources/automation-whitepapers" DesignTimeRectangle="9, -988, 1899, 3197" DesignTimeScaleFactor="1.25" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' parentid='gatsby-focus-wrapper' tag='DIV' /&gt;" Guid="05c79252-3bec-45ee-adf6-4018433a2d50" InformativeScreenshot="ba679b8d0f3f236c289c90e0eecd8fb0.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Download Automation &amp;amp; RPA White papers, eGuides | UiPath' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
+                    </uix:NExtractData.Target>
+                  </uix:NExtractData>
+                  <ui:WriteRange StartingCell="{x:Null}" AddHeaders="False" DataTable="[ExtractDataTable]" DisplayName="Write Range Workbook" sap:VirtualizedContainerService.HintSize="353.6,140.8" sap2010:WorkflowViewState.IdRef="WriteRange_1" SheetName="Sheet1" WorkbookPath="C:\Users\pridh\OneDrive\Documents\UiPath\Trial.xlsx" />
+                </Sequence>
+              </ActivityAction>
+            </uix:NApplicationCard.Body>
+            <uix:NApplicationCard.TargetApp>
+              <uix:TargetApp Area="0, 0, 0, 0" BrowserType="Chrome" IconBase64="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" InformativeScreenshot="deaa9ba4e7aaef3f5ed3dadc95d9ba7c.jpg" Selector="&lt;html app='chrome.exe' title='Download Automation &amp;amp; RPA White papers, eGuides | UiPath' /&gt;" Title="Download Automation &amp; RPA White papers, eGuides | UiPath" Url="https://www.uipath.com/resources/automation-whitepapers" />
+            </uix:NApplicationCard.TargetApp>
+          </uix:NApplicationCard>
+        </Sequence>
+      </ui:CommentOut.Body>
+    </ui:CommentOut>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application/Browser" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" ScopeGuid="6bad7239-787c-4fa1-bbcf-eac6591f6f92" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap2010:WorkflowViewState.IdRef="Sequence_4">
+            <uix:NExtractData AppendResults="False" ContinueOnError="True" DataTable="[ExtractDataTable]" DisplayName="Extract Table Data" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured' AddCvHeader='true' IsScrollEnabled='false'&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column0' Name='New column 0'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xD;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;true&lt;/CanExtractSimilar&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column1' Name='New column 1'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xD;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;true&lt;/CanExtractSimilar&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract&gt;&lt;row exact='1'&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='a' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;/row&gt;&lt;column exact='1' name='Column0' attr='fulltext'&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='a' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='h6' idx='1' /&gt;&lt;webctrl tag='span' idx='1' /&gt;&lt;/column&gt;&lt;column exact='1' name='Column1' attr='fulltext'&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='a' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='p' idx='1' /&gt;&lt;/column&gt;&lt;/extract&gt;" sap2010:WorkflowViewState.IdRef="NExtractData_2" LimitExtractionTo="None" MaximumResults="0" ScopeIdentifier="6bad7239-787c-4fa1-bbcf-eac6591f6f92" Version="V3">
+              <uix:NExtractData.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.uipath.com/resources/automation-case-studies" DesignTimeRectangle="9, -402, 1899, 3306" DesignTimeScaleFactor="1.25" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' parentid='gatsby-focus-wrapper' tag='DIV' /&gt;" Guid="706af9b3-a10b-4b0e-a782-a74e4c7884cc" InformativeScreenshot="421a6b7dcc4531c744f63d0cea18f7ed.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='RPA &amp;amp; Automation Case Studies | UiPath' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
+              </uix:NExtractData.Target>
+            </uix:NExtractData>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="0, 0, 0, 0" BrowserType="Chrome" IconBase64="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" InformativeScreenshot="eb57136a3233fb7f68d72d69606baf37.jpg" Selector="&lt;html app='chrome.exe' title='RPA &amp;amp; Automation Case Studies | UiPath' /&gt;" Title="RPA &amp; Automation Case Studies | UiPath" Url="https://www.uipath.com/resources/automation-case-studies" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>
